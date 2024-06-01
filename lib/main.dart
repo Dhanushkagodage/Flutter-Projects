@@ -156,6 +156,85 @@ class MyApp extends StatelessWidget {
                       ],
                     ),
                   ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Center(
+                    child: Image.asset(
+                      "assets/space3.png",
+                      width: 282,
+                      height: 282,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  const Text(
+                    "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed ",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w300,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  GestureDetector(
+                    onTap: () => {},
+                    child: Center(
+                      child: Container(
+                        height: 47,
+                        width: 231,
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 255, 68, 0),
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: const Center(
+                          child: Text(
+                          "SPACE DETAILS",
+                          style: TextStyle(
+                              color: Colors.white, 
+                              fontWeight: FontWeight.w300,
+                              fontSize:18
+                              ),
+                        )),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 60,
+                  ),
+                  Container(
+                    height: 2,
+                    width: 500,
+                    decoration: const BoxDecoration(
+                      color: Colors.white30,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const Text(
+                    "BACK HOLE",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const Text(
+                    "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed",
+                    
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 10,
+                      fontWeight: FontWeight.w300
+                    ),
+                  ),
                 ],
               ),
             ),
