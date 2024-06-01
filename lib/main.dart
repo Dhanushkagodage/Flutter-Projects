@@ -72,25 +72,90 @@ class MyApp extends StatelessWidget {
                   const SizedBox(
                     height: 50,
                   ),
-                  Center(
-                    child: Container(
-                      width:231 ,
-                      height:47 ,
-                      decoration: BoxDecoration(
-                        borderRadius:BorderRadius.circular(100),
-                        color: Colors.red,
-                      ),
-                      child: const Center(
-                        child: Text(
-                          "SPACE DETAILS",
-                          style: TextStyle(
-                            color: Colors.white,
+                  GestureDetector(
+                    onTap: () {},
+                    child: Center(
+                      child: Container(
+                        width:231 ,
+                        height:47 ,
+                        decoration: BoxDecoration(
+                          borderRadius:BorderRadius.circular(100),
+                          color: Colors.red,
+                        ),
+                        child: const Center(
+                          child: Text(
+                            "SPACE DETAILS",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                       ),
-                      
                     ),
-                  )
+                  ),
+
+                  //second window
+                  const SizedBox(
+                    height: 50,
+                  ),
+                  Center(
+                    child: Image.asset(
+                      "assets/space2.png",
+                      width: 342,
+                      height: 342,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  const Text(
+                    "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum ",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w300,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 30,left: 60,right: 60,top: 30),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Container(
+                          height: 50,
+                          width:50,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100),
+                            color: Colors.orange
+                          ),
+                        ),
+                        Container(
+                          height: 50,
+                          width:50,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100),
+                            color: Colors.blue
+                          ),
+                        ),
+                        Container(
+                          height: 50,
+                          width:50,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100),
+                            color: Colors.purple
+                          ),
+                        ),
+                        Container(
+                          height: 50,
+                          width:50,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100),
+                            color: Colors.pink
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
